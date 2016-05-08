@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.3"
-    resourcePrefix "hua"
+    resourcePrefix ""
 
     defaultConfig {
         minSdkVersion 14
@@ -19,8 +19,9 @@ android {
     }
     lintOptions {
         // disable 'GradleDependency'
-        // abortOnError false
-        ignoreWarnings true // if true, only report errors
+        abortOnError false
+        // if true, only report errors
+        ignoreWarnings true
     }
 }
 
@@ -30,4 +31,4 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
 }
 
-apply from: 'bintray.gradle'
+// apply from: 'bintray.gradle'

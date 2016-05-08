@@ -1,4 +1,4 @@
-<manifest package="jameson.io.library"
+<manifest package="jameson.io.library.sample"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -12,10 +12,10 @@
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
-            <action android:name="android.intent.action.VIEW"/>
-
-            <category android:name="android.intent.category.DEFAULT"/>
-            <category android:name="android.intent.category.BROWSABLE"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 

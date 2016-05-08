@@ -1,4 +1,4 @@
-<manifest package="jameson.io.mylibrary"
+<manifest package="jameson.io.library"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET"/>
