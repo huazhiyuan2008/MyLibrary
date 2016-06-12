@@ -12,6 +12,7 @@ Personal common android utils to jcenter
 * [AndroidUtils](https://github.com/jingle1267/android-utils)
 
 ## Gradle
+### JitPack
 ```
 allprojects {
     repositories { 
@@ -19,16 +20,16 @@ allprojects {
         maven { url "https://jitpack.io" }
     }
 }
-dependencies {
-    compile 'com.github.User:Repo:Tag'
-}
+
+compile 'com.github.huazhiyuan2008:MyLibrary:0.01'
 ```
 
+### Jcenter
 ```compile 'jameson.io.library:library:0.0.1'```
 
 
 ## 上传到JitPack
-https://www.jitpack.io/docs
+https://www.jitpack.io/docs/ANDROID/
 
 
 ## 上传到JCenter方法
