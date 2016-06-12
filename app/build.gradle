@@ -23,6 +23,10 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     // https://bintray.com/huazhiyuan2008/maven/droiderLibrary/
-    compile project(':library')
     // compile 'jameson.io.library:library:0.0.2'
+
+    // https://jitpack.io/#huazhiyuan2008/MyLibrary/0.01
+    compile 'com.github.huazhiyuan2008:MyLibrary:0.01'
+
+    // compile project(':library')
 }
