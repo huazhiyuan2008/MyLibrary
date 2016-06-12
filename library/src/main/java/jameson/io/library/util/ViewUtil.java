@@ -1,5 +1,6 @@
 package jameson.io.library.util;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
 import android.view.View;
@@ -76,12 +77,24 @@ public class ViewUtil {
      * @param context context
      * @return
      */
-    public int getStatusBarHeight(Context context) {
+    public static int getStatusBarHeight(Context context) {
         int result = 0;
         int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
         if (resourceId > 0) {
             result = context.getResources().getDimensionPixelSize(resourceId);
         }
         return result;
+    }
+
+    /**
+     * 获取statusBar高度
+     *
+     * @param context context
+     * @return
+     */
+    public static int getStatusBarHeightByActivity(Activity context) {
+        Rect frame = new Rect();
+        context.getWindow().getDecorView().getWindowVisibleDisplayFrame(frame);
+        return frame.top;
     }
 }

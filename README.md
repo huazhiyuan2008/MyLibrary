@@ -14,6 +14,7 @@ Personal common android utils to jcenter
 ```compile 'jameson.io.library:library:0.0.1'```
 
 ## 上传到JCenter方法
+`gradle bintrayUpload`
 http://blog.saymagic.cn/2015/02/16/release-library-to-jcenter.html
 https://www.virag.si/2015/01/publishing-gradle-android-library-to-jcenter/
 

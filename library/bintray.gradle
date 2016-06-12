@@ -5,7 +5,7 @@ def siteUrl = 'https://github.com/huazhiyuan2008/MyLibrary'      // 项目的主
 def gitUrl = 'https://github.com/huazhiyuan2008/MyLibrary.git'   // Git仓库的url
 group = "jameson.io.library" // Maven Group ID for the artifact，一般填你唯一的包名
 // 这个version是区分library版本的，因此当我们需要更新library时记得修改这个version
-version = "0.0.1"
+version = "0.0.2"
 
 install {
     repositories.mavenInstaller {
